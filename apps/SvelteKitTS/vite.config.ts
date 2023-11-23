@@ -6,9 +6,10 @@ export default defineConfig({
   esbuild: false,
   plugins: [
     typescript({
-      tsconfig: "tsconfig.json",
-      include: ["../../**/*.ts+(|x)"],
-      exclude: ["../../**/node_modules/**/*"],
+      check: false, // Otherwise breaks build with lint errors
+      tsconfig: "tsconfig.json", // To throw error if no local tsconfig.json found
+      include: ["../../**/*.ts+(|x)"], // Mandatoty to import TS modules from the monorepo
+      exclude: ["../../**/node_modules/**/*"], // To ensure good perf
     }),
     sveltekit(),
   ],
