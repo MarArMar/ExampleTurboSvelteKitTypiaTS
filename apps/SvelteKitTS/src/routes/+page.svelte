@@ -11,7 +11,7 @@
   import { messageLoadedLocal } from "./local-ts";
   import PrintValue from "SvelteImport/components/PrintValue.svelte";
   import { loadedTypiaLib } from "typiaLib/lib/typiaExample";
-  import { loadedIndirectTypia } from "./local-ts-with-ts-import";
+  import { loadedIndirectTypia } from "./local-ts-with-typia-import";
 
   onMount(() => {
     log("Page mounted");
