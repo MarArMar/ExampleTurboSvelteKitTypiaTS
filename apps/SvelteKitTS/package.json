@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "common": "workspace:*",
+    "SvelteImport": "workspace:*",
     "typiaLib": "workspace:*"
   },
   "type": "module"

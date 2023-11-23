@@ -9,6 +9,7 @@
   } from "./local-typia";
   import { log, messageLoaded } from "common/log";
   import { messageLoadedLocal } from "./local-ts";
+  import PrintValue from "SvelteImport/components/PrintValue.svelte";
 
   onMount(() => {
     log("Page mounted");
@@ -28,3 +29,5 @@
 {messageLoaded}
 <br />
 {loadedTypia}
+<br />
+<PrintValue />
