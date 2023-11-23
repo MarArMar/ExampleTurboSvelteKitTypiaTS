@@ -10,6 +10,8 @@
   import { log, messageLoaded } from "common/log";
   import { messageLoadedLocal } from "./local-ts";
   import PrintValue from "SvelteImport/components/PrintValue.svelte";
+  import { loadedTypiaLib } from "typiaLib/lib/typiaExample";
+  import { loadedIndirectTypia } from "./local-ts-with-ts-import";
 
   onMount(() => {
     log("Page mounted");
@@ -23,11 +25,13 @@
 <p>Check console for typia validations</p>
 <br />
 {messageLoadedLocal}
-<!-- <br />
-{messageLoadedLocalWithImport} -->
 <br />
 {messageLoaded}
 <br />
 {loadedTypia}
+<br />
+{loadedTypiaLib}
+<br />
+{loadedIndirectTypia}
 <br />
 <PrintValue />

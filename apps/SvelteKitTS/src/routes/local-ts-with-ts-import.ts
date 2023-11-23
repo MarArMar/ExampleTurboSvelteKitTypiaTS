@@ -1,6 +1,3 @@
-import { messageLoaded } from "common/log.ts";
+import { matchedLib, notMatchedLib } from "typiaLib/lib/typiaExample";
 
-let message: string = messageLoaded;
-
-export const messageLoadedLocalWithImport: string =
-  "Local typescript file local-ts-with-ts-import.ts with typescript loaded";
+export const loadedIndirectTypia = `typiaLib/lib/typiaExample.ts loaded in local ts file and matched is ${matchedLib} (expected: true) & notMatched is ${notMatchedLib} (expected: false)`;
